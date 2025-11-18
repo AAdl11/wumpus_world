@@ -51,7 +51,7 @@ The agent successfully navigates a 4×4 grid world, avoids dangers (Wumpus & pit
 
 ## 🎮 How to Run
 
-### Option 1: Text-Based Version (Recommended for Demo)
+### Option 1: Text-Based Version
 ```bash
 cd wumpus_world
 python main.py
@@ -63,7 +63,7 @@ python main.py
 - Shows agent's reasoning process
 - Displays knowledge base and percepts
 
-### Option 2: GUI Version (Visual Demo)
+### Option 2: GUI Version
 ```bash
 cd wumpus_world
 python gui.py
@@ -175,9 +175,9 @@ Total Moves: 12
 
 ---
 
-## 🖼️ GUI Demo Instructions
+## 🖼️ GUI Instructions
 
-### For Professor Lam's Final Project Demo:
+### Using the GUI Interface:
 
 1. **Launch GUI**:
 ```bash
@@ -186,7 +186,7 @@ Total Moves: 12
 
 2. **Click "Auto Run"** → Watch the AI solve the puzzle automatically!
 
-3. **Explain Key Features**:
+3. **Key Features**:
    - "The agent uses propositional logic to reason about danger"
    - "Forward chaining infers which cells are safe"
    - "BFS finds the optimal safe path to gold"
@@ -254,7 +254,7 @@ This CS4 Final Project demonstrates:
 - ✅ **Logical Reasoning**: Infers safe/unsafe cells from percepts
 - ✅ **Complete Solution**: Agent successfully retrieves gold
 - ✅ **Code Quality**: Well-structured, documented, readable
-- ✅ **Demo Ready**: Both text and GUI versions functional
+- ✅ **Functional Versions**: Both text and GUI versions operational
 
 ---
 
@@ -275,14 +275,29 @@ This CS4 Final Project demonstrates:
 
 ---
 
-## 🚀 Future Enhancements (Beyond CS4)
+## 🚀 Future Enhancements
 
-1. **Alpha-Beta Pruning**: Implement adversarial search if Wumpus can move
-2. **Bayesian Networks**: Probabilistic reasoning for uncertain environments
-3. **Machine Learning**: Train agent to learn optimal strategies
-4. **Larger Worlds**: Scale to 8x8 or variable size grids
-5. **Arrow Shooting**: Add ability to kill Wumpus with arrow
-6. **Backward Chaining**: Implement goal-directed reasoning
+Advanced features currently in development:
+
+1. **Probabilistic Reasoning (Bayesian Networks)**
+   - Handle uncertain environments
+   - Calculate probability distributions for hazards
+
+2. **Backward Chaining**
+   - Goal-directed reasoning
+   - Work backwards from objectives
+
+3. **Arrow Shooting Mechanism**
+   - Enable agent to eliminate the Wumpus
+   - Strategic decision-making for arrow usage
+
+4. **Larger Grid Worlds**
+   - Scale to 8×8 or variable size grids
+   - Test agent on more complex scenarios
+
+5. **Machine Learning Integration**
+   - Train agent to learn optimal strategies
+   - Improve decision-making through experience
 
 ---
 
