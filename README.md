@@ -1,14 +1,15 @@
-# Wumpus World - Knowledge-Based Agent 🤖
+# 🎮 Wumpus World - Knowledge-Based Agent
 
 **Author**: Mei Hsien Hsu (許美嫻)  
-**Course**: CS4 Intro AI - Professor An Lam  
+**Course**: CS4 - Introduction to Artificial Intelligence  
+**Professor**: An Lam  
 **Institution**: Las Positas College  
-**Project Type**: **CS4 Final Project**  
-**Date**: November 2025
+**Project Type**: CS4 Final Project  
+**Date**: Fall 2025
 
 ---
 
-## 📖 Project Overview
+## 📋 Project Overview
 
 This is my **CS4 Final Project** implementing a **Knowledge-Based Agent** to solve the classic Wumpus World problem using:
 - **Propositional Logic** for reasoning about the environment
@@ -16,6 +17,35 @@ This is my **CS4 Final Project** implementing a **Knowledge-Based Agent** to sol
 - **Breadth-First Search (BFS)** for pathfinding to goals
 
 The agent successfully navigates a 4×4 grid world, avoids dangers (Wumpus & pits), and retrieves gold using logical reasoning.
+
+---
+
+## 📸 Project Screenshots
+
+### 🖥️ Text-Based Version (main.py)
+
+![Main Start](images/game_screenshot1.png)
+*Initial configuration and world setup*
+
+![Main Steps](images/game_screenshot3.png)
+*Agent reasoning and decision-making process*
+
+![Main Success](images/game_screenshot6.png)
+*Final report showing mission success*
+
+### 🎮 GUI Version (gui.py)
+
+![GUI Start](images/gui_screenshot1_start.png)
+*Initial GUI interface with world grid*
+
+![GUI Playing](images/gui_screenshot2_playing.png)
+*Agent navigating and exploring the world*
+
+![GUI Got Gold](images/gui_screenshot3_got_gold.png)
+*Agent successfully retrieving the gold*
+
+![GUI Success](images/gui_screenshot4_success.png)
+*Mission accomplished with performance statistics*
 
 ---
 
@@ -48,16 +78,19 @@ python gui.py
 ---
 
 ## 🏗️ Project Structure
-
 ```
 wumpus_world/
-├── world.py          # Wumpus World environment simulation
-├── knowledge_base.py # Propositional logic & forward chaining
-├── search.py         # BFS pathfinding algorithm
-├── agent.py          # Knowledge-based agent logic
-├── main.py           # Text-based game interface
-├── gui.py            # GUI version with Tkinter
-└── README.md         # This file
+├── world.py              # Wumpus World environment simulation
+├── knowledge_base.py     # Propositional logic & forward chaining
+├── search.py             # BFS pathfinding algorithm
+├── agent.py              # Knowledge-based agent logic
+├── main.py               # Text-based game interface
+├── gui.py                # GUI version with Tkinter
+├── README.md             # Project documentation
+├── .gitignore            # Git ignore rules
+└── images/               # Screenshots
+    ├── game_screenshot1-6.png      # main.py execution results
+    └── gui_screenshot1-4.png       # gui.py execution results
 ```
 
 ---
@@ -115,7 +148,6 @@ def bfs_search(start, goal, safe_cells):
 ---
 
 ## 📊 Example Gameplay (Text Version)
-
 ```
 === Wumpus World - Knowledge-Based Agent ===
 World Configuration:
@@ -148,9 +180,9 @@ Total Moves: 12
 ### For Professor Lam's Final Project Demo:
 
 1. **Launch GUI**:
-   ```bash
+```bash
    python gui.py
-   ```
+```
 
 2. **Click "Auto Run"** → Watch the AI solve the puzzle automatically!
 
@@ -226,12 +258,31 @@ This CS4 Final Project demonstrates:
 
 ---
 
+## 📊 Performance Results
+
+✅ **SUCCESS** - Agent retrieved gold and escaped!
+
+**Statistics:**
+- Total Steps: 12
+- Cells Explored: 6
+- KB Facts Learned: 44
+- Success Rate: 100%
+
+**Demonstration:**
+- Text version shows step-by-step reasoning
+- GUI version provides visual feedback
+- Both versions demonstrate complete problem-solving
+
+---
+
 ## 🚀 Future Enhancements (Beyond CS4)
 
 1. **Alpha-Beta Pruning**: Implement adversarial search if Wumpus can move
 2. **Bayesian Networks**: Probabilistic reasoning for uncertain environments
 3. **Machine Learning**: Train agent to learn optimal strategies
 4. **Larger Worlds**: Scale to 8x8 or variable size grids
+5. **Arrow Shooting**: Add ability to kill Wumpus with arrow
+6. **Backward Chaining**: Implement goal-directed reasoning
 
 ---
 
@@ -249,6 +300,12 @@ This CS4 Final Project demonstrates:
 Las Positas College - Computer Science  
 CS4 Introduction to AI - Fall 2025  
 Final Project: Wumpus World Knowledge-Based Agent
+
+---
+
+## 🔗 GitHub Repository
+
+**Link**: [https://github.com/AAdl11/wumpus_world](https://github.com/AAdl11/wumpus_world)
 
 ---
 
