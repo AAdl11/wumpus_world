@@ -1,7 +1,7 @@
 """
 agent.py - Knowledge-Based Agent for Wumpus World
 Author: Mei Hsien Hsu
-Course: CS4 - Intro AI
+Course: CS4 - Introduction to AI 
 Fall 2025  
 """
 
